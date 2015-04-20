@@ -11,14 +11,21 @@ $(document).ready(function(){
   		$(".overlay").fadeOut(1000);
   	});
 
-//getting the computer to generate a number 
+//new game generates new computer number
 var newGame = function () {
-	var computerChoice = Math.random() * 100 {
-				return Math.round(computerChoice) //could this be Math.random.round? 
-			}
-		}
+	var computerChoice = Math.random() * 100 {     //getting the computer to generate a number 
+		return Math.round(computerChoice);    //could this be Math.random.round? 
+	}
+	userAttempt();
+}
 
-//assigning what to user inputs to the variable userInput
+//each time user submits new guess, compare this guess with computer's choice
+var userAttempt = function () {
+	document.getElementById("guessButton").onclick;
+    var userNumber = document.getElementById("userGuess").val("");
+}
+
+//retrieving the value
 var userInput = $("input").val();
 
 //comparing userInput to computerChoice on clicking the button
